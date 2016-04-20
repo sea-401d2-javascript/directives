@@ -9,10 +9,7 @@
         restrict: 'E',
         templateUrl: 'product-reviews/review.html',
         controller: 'ReviewController',
-        controllerAs: 'reviewCtrl', 
-        link: function($scope, element, attributes){
-          
-        }
+        controllerAs: 'reviewCtrl'
       };
     });
   

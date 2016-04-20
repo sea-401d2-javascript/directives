@@ -8,7 +8,7 @@ const del     = require('del');
 
 let paths = {
   js: [__dirname + '/app/**/*.js', __dirname + '/server.js'],
-  htmlAndCss: [__dirname + '/app/*.html', __dirname + '/app/*.css']
+  htmlAndCss: [__dirname + '/app/*.html', __dirname + '/app/**/*.html', __dirname + '/app/css/*.css']
 };
 
 gulp.task('eslint', () => {

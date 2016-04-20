@@ -3,7 +3,7 @@
 /* global angular */
 
 (function(){
-  angular.module('storeApp', ['store', 'product', 'productInfo', 'productReviews']);
+  angular.module('storeApp', ['store', 'product', 'productInfo', 'productReviews', 'redClick']);
   
   
 })();
