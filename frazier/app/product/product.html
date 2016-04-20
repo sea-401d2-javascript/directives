@@ -1,0 +1,15 @@
+<section>
+  {{product.name}}
+  <nav>
+    <ul>
+      <li data-ng-class="{ active: productCtrl.isSet('info') }">
+        <a href="" data-ng-click="productCtrl.setSection('info')">Product Info</a>
+      </li>
+      <li data-ng-class="{ active: productCtrl.isSet('reviews') }">
+        <a href="" data-ng-click="productCtrl.setSection('reviews')">Product Reviews</a>
+      </li>
+    </ul>
+  </nav>
+  <product-info data-ng-show="productCtrl.isSet('info')"></product-info>
+  <product-reviews data-ng-show="productCtrl.isSet('reviews')"></product-reviews>
+</section>
