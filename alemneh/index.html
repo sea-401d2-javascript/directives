@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="FightCard">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css" media="screen" title="no title" charset="utf-8">
+    <title>Fight Card</title>
+  </head>
+  <body>
+    <div class="container">
+    <bout-location venue="'MGM Grand'" city="'Las Vegas'" state="'NV'" date="'Mar 15, 2016'" time="'8pmEST'"></bout-location>
+      <div class="row">
+        <div class="col-md-3">
+          <img src="http://www.isportstimes.com/data/images/full/2012/06/04/1881-shane-mosley.jpg" alt="" />
+        </div>
+        <div class="col-md-3">
+          <h2>Champion</h2>
+          <div champion name="'Shane Mosley'" weight="'147lbs'" home-town="'San Diego, CA'" belt="'WBC'"></div>
+        </div>
+        <div class="col-md-3">
+          <img src="http://www.boxingtalk.com/img/fighters/ricardomayorga.jpg" alt="" />
+        </div>
+        <div class="col-md-3">
+          <h2>Challenger</h2>
+          <div challenger name="'Ricardo Mayorga'" weight="'147lbs'" home-town="'Managua, Nicaragua'"></div>
+        </div>
+      </div>
+      <h2>Officals:</h2>
+      <referee name="'Richard Steele'" num-fights="'25'"></referee>
+      <h3>If button turns green your purchase was successful.</h3>
+      <purchase-ticket></purchase-ticket>
+    </div>
+
+  <script src="./node_modules/angular/angular.js"></script>
+  <script src="./app.js"></script>
+  </body>
+</html>
