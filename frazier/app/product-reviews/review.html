@@ -1,0 +1,18 @@
+<section>
+  
+  <blockquote data-ng-repeat="review in product.reviews">
+    <span data-ng-bind="review.stars"></span> stars
+    <p data-ng-bind="review.body"></p>
+    <cite data-ng-bind="'-{{review.author}} on {{review.createdOn | date}}'"></cite>
+  </blockquote>
+  
+  <form data-ng-submit="reviewCtrl.addReview(product)">
+    <input type="email" name="email" placeholder="yourname@email.com" data-ng-model="reviewCtrl.newReview.author" />
+    <select name="stars" title="Stars" data-ng-options="stars for stars in [5,4,3,2,1]" data-ng-model="reviewCtrl.newReview.stars">
+      <option value="">Rate product</option>
+    </select>
+    <textarea name="body" rows="8" cols="40" data-ng-model="reviewCtrl.newReview.body"></textarea>
+    <input type="submit" value="Save" />
+  </form>
+  
+</section>
